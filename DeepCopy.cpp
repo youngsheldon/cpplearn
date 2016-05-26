@@ -2,7 +2,11 @@
 * @Author: anchen
 * @Date:   2016-05-25 22:02:40
 * @Last Modified by:   anchen
-* @Last Modified time: 2016-05-26 08:59:56
+<<<<<<< HEAD
+* @Last Modified time: 2016-05-26 09:03:24
+=======
+* @Last Modified time: 2016-05-26 09:01:39
+>>>>>>> dev
 */
 
 #include <iostream>
@@ -93,4 +97,4 @@ int main(){
 
     return 0;
 }
-//hi gt
+//hi ghh
