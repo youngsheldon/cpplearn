@@ -3,7 +3,7 @@
 * @Date:   2016-05-25 22:02:40
 * @Last Modified by:   anchen
 <<<<<<< HEAD
-* @Last Modified time: 2016-05-26 09:03:24
+* @Last Modified time: 2016-05-26 09:59:16
 =======
 * @Last Modified time: 2016-05-26 09:01:39
 >>>>>>> dev
@@ -23,7 +23,9 @@ public:
     void showPname();
     void showSize();
     char* getPname();
+    int getSize();
     void operator=(DeepCopy &obj);
+public:
     char* pname;
     int size;
 };
@@ -60,6 +62,12 @@ char* DeepCopy::getPname()
     return pname;
 }
 
+int DeepCopy::getSize()
+{
+    return size;
+}
+
+
 DeepCopy::DeepCopy(DeepCopy & obj)
 {
     cout<<"DeepCopy::DeepCopy(DeepCopy & obj)"<<endl;
@@ -85,7 +93,6 @@ void DeepCopy::operator=(DeepCopy &obj)
     size = obj.size;
 }
 
-
 int main(){
     DeepCopy obj("sheldon");
     DeepCopy obj2("young");
@@ -97,4 +104,3 @@ int main(){
 
     return 0;
 }
-//hi ghh
